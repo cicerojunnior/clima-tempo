@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clima Tempo</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Clima Tempo</h2>
+        <div id="input-button">
+            <input type="text" id="input" class="input" placeholder="Insira a Cidade" required>
+            <button id="button" type="button" onclick="pegarCidade()">Buscar</button>
+        </div>
+        <span id="sem-cidade"></span>
+        <div id="result">
+            <h3 class="cidade"></h3>
+            <div class="previsao">
+                <div class="temperatura">
+                    <h5 id="temperatura"></h5>
+                    <div class="dados" id="dados-temperatura"></div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png">
+                </div>
+                <div class="vento">
+                    <h5 id="vento"></h5>
+                    <div class="dados" id="dados-vento"></div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2204/2204367.png">
+                </div>
+            </div>
+        </div>
+        <div class="credits">
+            <a href="https://www.linkedin.com/in/cicerojunnior/" target="_blank">Criado por Cícero Júnior</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
