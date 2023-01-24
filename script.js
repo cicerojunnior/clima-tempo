@@ -20,7 +20,7 @@ const cidadeNaoEncontrada = () => {
 
 
 inputCidade.addEventListener('keyup', event => { //Adicionar opção de onClick com o Enter
-    if(event.keyCode === 13) {
+    if(event.key === "Enter") {
         event.preventDefault()
         pegarCidade()
     }
@@ -70,5 +70,5 @@ const pegarDados = async (cidade, lat, long) => { //pega os dados através das c
     ventoTitulo.innerHTML = "Vento"
     mostrarResult.classList.add("result")
     semCidade.classList.remove("sem-cidade")
-    console.log(dados)
+    inputCidade.classList.remove("placeholder")
 }
