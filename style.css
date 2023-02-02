@@ -78,6 +78,9 @@ div#input-button button#button:active {
 span#sem-cidade {
     display: none;
 }
+a span {
+    color: #fff;
+}
 .sem-cidade {
     display: flex !important;
     text-align: center;

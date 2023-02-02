@@ -39,7 +39,7 @@ const pegarCidade = () => {           //pega a cidade no input e faz o tratament
 }
 
 const pegarCoordenadas = async (cidade) => {  // pega as coordenadas na api e faz o tratamento de invalidações 
-    const urlCoordenadas = `http://api.openweathermap.org/geo/1.0/direct?q=${cidade},BRA&limit=1&appid=${API_KEY}`
+    const urlCoordenadas = `https://api.openweathermap.org/geo/1.0/direct?q=${cidade},BRA&limit=1&appid=${API_KEY}`
     const req = await fetch(urlCoordenadas)
     const coordenadas = await req.json()
 
@@ -64,7 +64,7 @@ const pegarDados = async (cidade, lat, long) => { //pega os dados através das c
     const vent = dados.wind.speed
     
     cidadeTitulo.innerHTML = cidade
-    temperatura.innerHTML = Math.round(24.5) + " ºC"
+    temperatura.innerHTML = Math.round(temp) + " ºC"
     vento.innerHTML = Math.round(vent*3.6) + " km/h"
     temperaturaTitulo.innerHTML = "Temperatura"
     ventoTitulo.innerHTML = "Vento"
